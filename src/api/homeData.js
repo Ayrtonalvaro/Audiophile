@@ -11,7 +11,9 @@ export const homeData = ()=> {
                 title: 'see product',
                 link: '/product/xx99-mark-two-headphones'
               }
-            }
+            },
+            
+            
           };
           resolve(data)
         }, 0);

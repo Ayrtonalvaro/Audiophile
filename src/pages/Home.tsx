@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import Hero from '../components/Hero/Hero'
+import Hero from '../components/Home/Hero/Hero'
 import { homeData } from '../api/homeData';
+import GridCategory from '../components/Home/Category/GridCategory';
 const Home = () => {
   const [dataHome, setDataHome] = useState([{}]); 
 
@@ -11,6 +12,7 @@ const Home = () => {
   return (
     <div>
       <Hero dataHome={dataHome}/>
+      <GridCategory />
     </div>
   )
 }

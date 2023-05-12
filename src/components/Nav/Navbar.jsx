@@ -1,20 +1,29 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import logoAud from '../../assets/shared/desktop/logo.svg';
 import CartIcon from './CartIcon';
 import NavLink from './NavLink';
 
 const Navbar = () => {
   const [stateMenu, setStateMenu ] =  useState(false)
+  const [scroll, setScroll] = useState(false)
   const handleMenu = () => {
     setStateMenu(!stateMenu)
   }
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 20)
+    })
+  },[])
+
+  const navTrasnparent = `navbar ${scroll ? '-bg-transparent' : 'bg-transparent'}`
   return (
     <nav
-      className="
+      className={`
       fixed
       w-full 
       bg-black
-      lg:bg-transparent 
+      lg:${navTrasnparent}
+      duration-200
       z-40 
       py-5 
       px-10
@@ -28,9 +37,8 @@ const Navbar = () => {
       lg:items-center
       border-b
       border-slate-600
-      "
+      `}
     >
-    
       <div className="flex items-center gap-10">
         <span className="cursor-pointer lg:hidden" onClick={handleMenu}>
           {stateMenu === false && (
