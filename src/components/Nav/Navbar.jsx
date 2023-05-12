@@ -11,8 +11,10 @@ const Navbar = () => {
   return (
     <nav
       className="
+      fixed
       w-full 
-      bg-black 
+      bg-black
+      lg:bg-transparent 
       z-40 
       py-5 
       px-10
@@ -23,8 +25,12 @@ const Navbar = () => {
       lg:px-44 
       lg:flex 
       lg:justify-between 
-      lg:items-center"
+      lg:items-center
+      border-b
+      border-slate-600
+      "
     >
+    
       <div className="flex items-center gap-10">
         <span className="cursor-pointer lg:hidden" onClick={handleMenu}>
           {stateMenu === false && (
@@ -55,6 +61,7 @@ const Navbar = () => {
         py-4
         pl-5
         bg-black
+        lg:bg-transparent 
         opacity-0
         lg:opacity-100
         "

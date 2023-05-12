@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        'hero-pattern': 'url("/src/assets/home/desktop/image-hero.jpg")'
+        'hero-pattern': "url('/src/assets/home/desktop/image-hero.jpg')"
       },
       fontFamily: {
         manrope: ["'Manrope'", 'sans-serif']
