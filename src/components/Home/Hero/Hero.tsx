@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import ButtonSeeProduct from '../ButtonSeeProduct';
+import { home }from '../../../api/home'
 
-const Hero = ({dataHome}) => {
-  const {heading, description, subHeading} = dataHome
+const Hero = () => {
+  const [heroData, setHeroData] = useState(home.hero);
+  const {heading, description, subHeading } = heroData;
+  
   return (
     <div
       className='
@@ -27,9 +31,7 @@ const Hero = ({dataHome}) => {
             lg:font-sm 
             lg:text-start
             "
-          >
-            {subHeading}
-          </h3>
+          >{subHeading}</h3>
           <h1 className="text-center text-6xl font-bold mt-5 uppercase lg:text-start">
             {heading}
           </h1>
@@ -37,9 +39,7 @@ const Hero = ({dataHome}) => {
             {description}
           </p>
           <div className="flex justify-center lg:justify-start">
-            <button className=" bg-orange-500 opacity-90 p-2 px-5 uppercase text-sm mt-5">
-              see product
-            </button>
+            <ButtonSeeProduct textColor="white" bgColor="bg-orange-500" />
           </div>
         </div>
       </div>
