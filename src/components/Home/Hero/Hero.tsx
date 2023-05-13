@@ -39,7 +39,7 @@ const Hero = () => {
             {description}
           </p>
           <div className="flex justify-center lg:justify-start">
-            <ButtonSeeProduct textColor="white" bgColor="bg-orange-500" />
+            <ButtonSeeProduct textColor="white" bgColor="bg-orange-500" borderColor="none"/>
           </div>
         </div>
       </div>

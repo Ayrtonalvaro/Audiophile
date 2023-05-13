@@ -2,10 +2,12 @@ import { useEffect, useState } from 'react';
 import logoAud from '../../assets/shared/desktop/logo.svg';
 import CartIcon from './CartIcon';
 import NavLink from './NavLink';
-
+import { Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 const Navbar = () => {
   const [stateMenu, setStateMenu ] =  useState(false)
   const [scroll, setScroll] = useState(false)
+  
   const handleMenu = () => {
     setStateMenu(!stateMenu)
   }
@@ -15,7 +17,7 @@ const Navbar = () => {
     })
   },[])
 
-  const navTrasnparent = `navbar ${scroll ? '-bg-transparent' : 'bg-transparent'}`
+  const navTrasnparent = `navbar ${scroll ? '-bg-transparent' : '-bg-transparent'}`
   return (
     <div>
       <nav
@@ -75,10 +77,18 @@ const Navbar = () => {
         lg:opacity-100
         "
           >
-            <NavLink label="HOME" />
-            <NavLink label="HEADPHONES" />
-            <NavLink label="SPEAKERS" />
-            <NavLink label="EARPHONES" />
+            <Link to="/">
+              <NavLink label="HOME" />
+            </Link>
+            <Link to="/products/headpones">
+              <NavLink label="HEADPHONES" />
+            </Link>
+            <Link to="/products/speakers">
+              <NavLink label="SPEAKERS" />
+            </Link>
+            <Link to="/products/earphones">
+              <NavLink label="EARPHONES" />
+            </Link>
           </ul>
         )}
         {stateMenu === true && (

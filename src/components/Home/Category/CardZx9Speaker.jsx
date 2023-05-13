@@ -49,7 +49,7 @@ const CardZx9Speaker = ({ info }) => {
           <p className="text-white px-10 mt-10 text-center md:text-center lg:text-start ">
             {description}
           </p>
-          <ButtonSeeProduct textColor="white" bgColor="bg-black" />
+          <ButtonSeeProduct textColor="white" bgColor="bg-black" borderColor="none" />
         </div>
       </div>
     </div>

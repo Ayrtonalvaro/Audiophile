@@ -1,11 +1,11 @@
 import React from 'react'
 
-const ButtonSeeProduct = ({bgColor, textColor}) => {
+const ButtonSeeProduct = ({bgColor, textColor, borderColor}) => {
   
   return (
     <>
       <button
-        className={`${bgColor} text-${textColor} border border-black opacity-90 p-2 px-5 uppercase text-sm mt-5`}
+        className={`${bgColor} text-${textColor} border border-${borderColor} opacity-90 p-2 px-5 uppercase text-sm mt-5`}
       >
         see product
       </button>
