@@ -1,7 +1,5 @@
 import React from 'react'
-import headphoneImg from '../../../assets/shared/desktop/image-headphones.png'
-import earphonesImg from '../../../assets/shared/desktop/image-earphones.png'
-import speakersImg from '../../../assets/shared/desktop/image-speakers.png';
+
 import inconArrowRight from '../../../assets/shared/desktop/icon-arrow-right.svg'
 const CardCategory = ({urlImg, title}) => {
   return (

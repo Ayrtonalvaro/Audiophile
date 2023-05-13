@@ -17,8 +17,9 @@ const Navbar = () => {
 
   const navTrasnparent = `navbar ${scroll ? '-bg-transparent' : 'bg-transparent'}`
   return (
-    <nav
-      className={`
+    <div>
+      <nav
+        className={`
       fixed
       w-full 
       bg-black
@@ -38,23 +39,23 @@ const Navbar = () => {
       border-b
       border-slate-600
       `}
-    >
-      <div className="flex items-center gap-10">
-        <span className="cursor-pointer lg:hidden" onClick={handleMenu}>
-          {stateMenu === false && (
-            <i className="fa-solid fa-bars hover:text-orange-400 duration-300 text-white text-xl"></i>
-          )}
-          {stateMenu === true && (
-            <i className="fa-solid fa-x hover:text-orange-400 duration-300 text-white text-xl"></i>
-          )}
-        </span>
-        <span>
-          <img src={logoAud} alt="logo_aud" />
-        </span>
-      </div>
-      {stateMenu === false && (
-        <ul
-          className="
+      >
+        <div className="flex items-center gap-10">
+          <span className="cursor-pointer lg:hidden" onClick={handleMenu}>
+            {stateMenu === false && (
+              <i className="fa-solid fa-bars hover:text-orange-400 duration-300 text-white text-xl"></i>
+            )}
+            {stateMenu === true && (
+              <i className="fa-solid fa-x hover:text-orange-400 duration-300 text-white text-xl"></i>
+            )}
+          </span>
+          <span>
+            <img src={logoAud} alt="logo_aud" />
+          </span>
+        </div>
+        {stateMenu === false && (
+          <ul
+            className="
         lg:z-auto 
         lg:static
         lg:flex 
@@ -73,16 +74,16 @@ const Navbar = () => {
         opacity-0
         lg:opacity-100
         "
-        >
-          <NavLink label="HOME" />
-          <NavLink label="HEADPHONES" />
-          <NavLink label="SPEAKERS" />
-          <NavLink label="EARPHONES" />
-        </ul>
-      )}
-      {stateMenu === true && (
-        <ul
-          className="
+          >
+            <NavLink label="HOME" />
+            <NavLink label="HEADPHONES" />
+            <NavLink label="SPEAKERS" />
+            <NavLink label="EARPHONES" />
+          </ul>
+        )}
+        {stateMenu === true && (
+          <ul
+            className="
         lg:z-auto 
         lg:static
         lg:flex 
@@ -102,15 +103,17 @@ const Navbar = () => {
         duration-500
         lg:opacity-100
         "
-        >
-          <NavLink label="HOME" />
-          <NavLink label="HEADPHONES" />
-          <NavLink label="SPEAKERS" />
-          <NavLink label="EARPHONES" />
-        </ul>
-      )}
-      <CartIcon />
-    </nav>
+          >
+            <NavLink label="HOME" />
+            <NavLink label="HEADPHONES" />
+            <NavLink label="SPEAKERS" />
+            <NavLink label="EARPHONES" />
+          </ul>
+        )}
+        <CartIcon />
+      </nav>
+      <div></div>
+    </div>
   );
 };
 

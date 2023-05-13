@@ -5,37 +5,50 @@ import checkMark from '../../../assets/shared/desktop/check-mark.svg';
 const CardZx9Speaker = ({ info }) => {
   const { heading, description } = info;
   return (
-    <div className="lg:mt-10 md:mx-20">
+    <div className="lg:mt-10 md:mx-20 mx-5  ">
       <div
         className='
         bg-orange-500 
         opacity-90 
-        w-full 
-        px-40 
+        2xl:max-h-full
+        lg:px-40 
         rounded-md 
         pt-36 
         relative
         flex
         lg:bg-[url("/src/assets/home/desktop/pattern-circles.svg")]
         md:bg-[url("/src/assets/home/desktop/pattern-circles.svg")]
+        bg-[url("/src/assets/home/desktop/pattern-circles.svg")]
         md:bg-cover
         md:bg-center
+        bg-center
         bg-no-repeat
-        lg:justify-center
-        lg:gap-60
+        lg:flex-row
         md:flex-col
+        lg:justify-center
+        lg:gap-20
         md:items-center
         md:mr-20
+        flex-col
+        items-center
+        mt-20
+        pb-20
         '
       >
         <div>
-          <img src={speakerImg} alt="speaker_img" className="w-96 md:w-52" />
+          <img
+            src={speakerImg}
+            alt="speaker_img"
+            className="lg:w-full md:w-52 w-40"
+          />
         </div>
-        <div className="w-96  md:flex md:flex-col md:items-center ">
-          <h2 className="text-white md:w-80 text-6xl uppercase text-center  w-20 font-bold mt-10">
+        <div className="lg:w-96 flex flex-col items-center justify-center md:w-96 md:flex md:flex-col md:items-center lg:items-start ">
+          <h2 className="text-white  sm:text-8xl md:w-76 text-6xl uppercase text-center lg:text-start   font-bold mt-10 ">
             {heading}
           </h2>
-          <p className="text-white mt-10 md:text-center">{description}</p>
+          <p className="text-white px-10 mt-10 text-center md:text-center lg:text-start ">
+            {description}
+          </p>
           <ButtonSeeProduct textColor="white" bgColor="bg-black" />
         </div>
       </div>
