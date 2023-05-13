@@ -80,7 +80,7 @@ const Navbar = () => {
             <Link to="/">
               <NavLink label="HOME" />
             </Link>
-            <Link to="/products/headpones">
+            <Link to="/products/headphones">
               <NavLink label="HEADPHONES" />
             </Link>
             <Link to="/products/speakers">
