@@ -2,7 +2,7 @@ import React from 'react';
 import ButtonSeeProduct from '../ButtonSeeProduct';
 
 const CardZx7Speaker = ({ info }) => {
-  const { heading } = info;
+  const { heading, slug } = info;
   return (
     <div
       className=' 
@@ -22,7 +22,7 @@ const CardZx7Speaker = ({ info }) => {
     >
       <div className="pt-20 pl-10 lg:pl-0">
         <h2 className="text-xl md:text-5xl lg:text-6xl uppercase font-bold">{heading}</h2>
-        <ButtonSeeProduct />
+        <ButtonSeeProduct borderColor="gray-300" slug={slug}/>
       </div>
     </div>
   );

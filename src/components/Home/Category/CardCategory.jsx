@@ -1,9 +1,10 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 import inconArrowRight from '../../../assets/shared/desktop/icon-arrow-right.svg'
 const CardCategory = ({urlImg, title}) => {
   return (
-    <div className="
+    <div
+      className="
       flex 
       flex-col 
       justify-center 
@@ -13,7 +14,8 @@ const CardCategory = ({urlImg, title}) => {
       md:pt-32 
       md:pb-5 
       lg:mx-20 
-      rounded-md">
+      rounded-md"
+    >
       <img
         className="w-72  -top-96 md:absolute lg:-top-32 md:-top-24"
         src={urlImg}
@@ -25,9 +27,14 @@ const CardCategory = ({urlImg, title}) => {
       >
         {title}
       </h5>
-      <div className='flex items-center gap-2'>
-        <span className="text-slate-300 hover:text-orange-400 duration-300 uppercase text-sm cursor-pointer ">Shop</span>
-        <img src={inconArrowRight} alt='img-arrow' />
+
+      <div className="cursor-pointer hover:scale-110 duration-300 ">
+        <Link to={`/products/${title}`} className="flex items-center gap-2 ">
+          <span className="text-slate-300 hover:text-orange-400 duration-300 uppercase text-sm  ">
+            Shop
+          </span>
+          <img src={inconArrowRight} alt="img-arrow" />
+        </Link>
       </div>
     </div>
   );

@@ -27,6 +27,7 @@ const Navbar = () => {
       bg-black
       lg:${navTrasnparent}
       duration-200
+      top-0
       z-40 
       py-5 
       px-10

@@ -4,7 +4,8 @@ import { home }from '../../../api/home'
 
 const Hero = () => {
   const [heroData, setHeroData] = useState(home.hero);
-  const {heading, description, subHeading } = heroData;
+  const {heading, description,subHeading,slug } = heroData;
+  console.log(heroData.slug)
   
   return (
     <div
@@ -31,7 +32,9 @@ const Hero = () => {
             lg:font-sm 
             lg:text-start
             "
-          >{subHeading}</h3>
+          >
+            {subHeading}
+          </h3>
           <h1 className="text-center text-6xl font-bold mt-5 uppercase lg:text-start">
             {heading}
           </h1>
@@ -39,7 +42,12 @@ const Hero = () => {
             {description}
           </p>
           <div className="flex justify-center lg:justify-start">
-            <ButtonSeeProduct textColor="white" bgColor="bg-orange-500" borderColor="none"/>
+            <ButtonSeeProduct
+              textColor="white"
+              bgColor="bg-orange-500"
+              borderColor="none"
+              slug={heroData.slug}
+            />
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ const GridCategory = () => {
   return (
     <div className="md:mt-36 mt-20">
       <div className="grid md:grid-cols-3 justify-center  md:p-20 gap-10">
-        <CardCategory urlImg={headphoneImg} title={'headphone'} />
+        <CardCategory urlImg={headphoneImg} title={'headphones'} />
         <CardCategory urlImg={earphonesImg} title={'earphones'} />
         <CardCategory urlImg={speakersImg} title={'speakers'} />
       </div>

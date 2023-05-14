@@ -3,7 +3,8 @@ import speakerImg from '../../../assets/home/desktop/image-speaker-zx9.png';
 import ButtonSeeProduct from '../ButtonSeeProduct';
 import checkMark from '../../../assets/shared/desktop/check-mark.svg';
 const CardZx9Speaker = ({ info }) => {
-  const { heading, description } = info;
+  const { heading, description, slug } = info;
+  
   return (
     <div className="lg:mt-10 md:mx-20 mx-5  ">
       <div
@@ -49,7 +50,7 @@ const CardZx9Speaker = ({ info }) => {
           <p className="text-white px-10 mt-10 text-center md:text-center lg:text-start ">
             {description}
           </p>
-          <ButtonSeeProduct textColor="white" bgColor="bg-black" borderColor="none" />
+          <ButtonSeeProduct textColor="white" bgColor="bg-black" borderColor="none" slug={slug}/>
         </div>
       </div>
     </div>

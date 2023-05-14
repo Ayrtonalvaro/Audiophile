@@ -1,6 +1,7 @@
 export const home = {
   hero: {
     heading: 'XX99 mark II headphones',
+    slug: 'xx99-mark-two-headphones',
     subHeading: 'new product',
     description:
       'Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.',
@@ -11,11 +12,13 @@ export const home = {
   },
   sectionTwo: {
     heading: 'ZX9 speaker',
+    slug: 'zx9-speaker',
     description:
       'Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.'
   },
   sectionThree: {
     heading: 'zx7 speaker',
+    slug: 'zx7-speaker',
     button: {
       title: 'see product',
       link: '/product/zx7-speaker'
@@ -23,6 +26,7 @@ export const home = {
   },
   sectionFour: {
     heading: 'yx1 earphones',
+    slug: 'yx1-earphones',
     button: {
       title: 'see product',
       link: '/product/yx1-earphones'
