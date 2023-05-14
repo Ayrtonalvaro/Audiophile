@@ -4,14 +4,14 @@
         "displayName": "YX1",
         "price": 599,
         "image": "/assets/cart/image-yx1-earphones.jpg",
-        "quantity": 0
+        "quantity": 1
     },
     {
         "name": "XX59 Headphones",
         "displayName": "XX59",
         "price": 899,
         "image": "/assets/cart/image-xx59-headphones.jpg",
-        "quantity": 0
+        "quantity": 2
     },
     {
         "name": "XX99 Mark I Headphones",
@@ -25,20 +25,20 @@
         "displayName": "XX99 MKII",
         "price": 2999,
         "image": "/assets/cart/image-xx99-mark-two-headphones.jpg",
-        "quantity": 0
+        "quantity": 3
     },
     {
         "name": "ZX7 Speaker",
         "displayName": "ZX7",
         "price": 3500,
         "image": "/assets/cart/image-zx7-speaker.jpg",
-        "quantity": 0
+        "quantity": 1
     },
     {
         "name": "ZX9 Speaker",
         "displayName": "ZX9",
         "price": 4500,
         "image": "/assets/cart/image-zx9-speaker.jpg",
-        "quantity": 0
+        "quantity": 1
     }
 ]

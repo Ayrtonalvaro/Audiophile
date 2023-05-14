@@ -6,7 +6,7 @@ const shared = () => {
   const {heading, description} = info;
   
   return (
-    <div className="mt-10 mb-10 mx-5 md:flex md:flex-col md:items-center lg:mt-24  lg:flex-row-reverse lg:px-40">
+    <div className="mt-10 pb-20 lg:pb-52 mx-5 md:flex md:flex-col md:items-center lg:mt-24  lg:flex-row-reverse lg:px-40">
       <img
         className="rounded-lg"
         src="../../../assets/shared/desktop/image-best-gear.jpg"

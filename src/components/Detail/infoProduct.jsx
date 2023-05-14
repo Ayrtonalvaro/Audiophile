@@ -3,6 +3,7 @@ import ButtonSeeProduct from '../Home/ButtonSeeProduct'
 import { Link } from 'react-router-dom'
 import Counter from './Counter';
 import ButtonAddCart from './ButtonAddCart';
+import ButtonGoBack from '../ButtonGoBack';
 const infoProduct = ({name, category, description, price, urlImg}) => {
   return (
     <div
@@ -25,10 +26,7 @@ const infoProduct = ({name, category, description, price, urlImg}) => {
         md:items-center"
       >
         <div>
-          <Link to="/">
-            <button className="mb-20 hover:text-orange-400 duration-200">Go back</button>
-          </Link>
-
+          <ButtonGoBack />
           <img
             className="w-48 md:w-96 lg:w-[600px] rounded-lg"
             src={urlImg}

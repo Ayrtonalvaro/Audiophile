@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 html {
-  @apply h-screen 
+  @apply h-screen
+  
 }
 * {
   @apply font-manrope
+  
 }

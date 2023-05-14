@@ -18,7 +18,7 @@ const Detail = () => {
   const accessories = productFilter[0].includes
   const gallery = productFilter[0].gallery
   return (
-    <div className="">
+    <div className="bg-slate-50">
       <InfoProdcut 
         name={name} 
         category={category} 

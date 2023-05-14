@@ -7,7 +7,6 @@ import { useParams } from 'react-router-dom';
 const Navbar = () => {
   const [stateMenu, setStateMenu ] =  useState(false)
   const [scroll, setScroll] = useState(false)
-  
   const handleMenu = () => {
     setStateMenu(!stateMenu)
   }
@@ -17,9 +16,12 @@ const Navbar = () => {
     })
   },[])
 
+  const scrollRef = useState(null)
+  const executeScroll = () => scrollRef.current.scrollIntoView()
+
   const navTrasnparent = `navbar ${scroll ? '-bg-transparent' : '-bg-transparent'}`
   return (
-    <div>
+    <div ref={scrollRef}>
       <nav
         className={`
       fixed
@@ -78,16 +80,16 @@ const Navbar = () => {
         lg:opacity-100
         "
           >
-            <Link to="/">
+            <Link onClick={executeScroll} to="/">
               <NavLink label="HOME" />
             </Link>
-            <Link to="/products/headphones">
+            <Link onClick={executeScroll} to="/products/headphones">
               <NavLink label="HEADPHONES" />
             </Link>
-            <Link to="/products/speakers">
+            <Link onClick={executeScroll} to="/products/speakers">
               <NavLink label="SPEAKERS" />
             </Link>
-            <Link to="/products/earphones">
+            <Link onClick={executeScroll} to="/products/earphones">
               <NavLink label="EARPHONES" />
             </Link>
           </ul>
@@ -121,7 +123,9 @@ const Navbar = () => {
             <NavLink label="EARPHONES" />
           </ul>
         )}
-        <CartIcon />
+        <Link to="/checkout">
+          <CartIcon />
+        </Link>
       </nav>
       <div></div>
     </div>

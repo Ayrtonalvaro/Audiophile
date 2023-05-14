@@ -24,7 +24,7 @@ const Products = () => {
   }, [category]);
 
   return (
-    <div className="h-full">
+    <div className="h-full bg-slate-50">
       <Header title={category} />
       <div className="mt-10 mb-10">
         {products.map((product) => (

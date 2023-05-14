@@ -7,13 +7,13 @@ const GirdImg = ({ gallery }) => {
   const { first, second, third } = gallery;
   return (
     <div className="mt-10 lg:px-48 px-10">
-      <div className=" grid lg:grid-cols-2 justify-center lg:mr-36  ">
-        <div className="flex flex-col gap-9 items-start ">
+      <div className=" grid md:grid-cols-2 justify-center lg:mr-36  ">
+        <div className="flex flex-col md:gap-1 gap-9 items-start ">
           <img className="rounded-md" src={first.desktop} />
           <img className="rounded-md" src={second.desktop} />
         </div>
-        <div className="justify-start mt-10 lg:mt-0">
-          <img className="rounded-md" src={third.desktop} />
+        <div className="justify-start mt-10 md:mt-0">
+          <img className="rounded-md w-full" src={third.desktop} />
         </div>
       </div>
     </div>

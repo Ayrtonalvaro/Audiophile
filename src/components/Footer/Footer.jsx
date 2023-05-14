@@ -6,7 +6,7 @@ import IconRedSocial from '../IconRedSocial';
 
 const Footer = () => {
   return (
-    <div className="bg-black flex flex-col justify-center md:items-start md:pl-10 items-center lg:px-44 lg:mt-20 ">
+    <div className="bg-black flex flex-col justify-center md:items-start md:pl-10 items-center lg:px-44 lg:mt-0 ">
       <div className="border border-orange-400 h-1 bg-orange-400 w-28"></div>
       <div className="pt-10 flex flex-col items-center md:items-start lg:flex-row lg:justify-between lg:w-full ">
         <img src={logoAud} alt="logo-aud" />
