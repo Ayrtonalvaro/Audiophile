@@ -6,7 +6,7 @@ import { cart } from '../api/cart';
 const Checkout = () => {
 
   const [products] = useState(cart)
-  
+  console.log(products)
   return (
     <div className='bg-slate-50'>
       <Layuout products={products}/>

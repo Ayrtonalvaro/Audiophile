@@ -3,6 +3,7 @@ import ButtonGoBack from '../ButtonGoBack';
 import Form from './Form';
 import Summary from './Summary';
 const Layuout = ({products}) => {
+  
   return (
     <div>
       <div
@@ -18,7 +19,7 @@ const Layuout = ({products}) => {
         <div
           className="
         flex-col 
-        flex 
+        lg:flex 
         items-center 
         rouded-md 
         md:justify-center 

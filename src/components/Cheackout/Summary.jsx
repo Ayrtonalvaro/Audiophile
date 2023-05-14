@@ -3,7 +3,6 @@ import CardProduct from './CardProduct'
 
 const Summary = ({products}) => {
   
-  console.log(products)
   return (
     <div className="bg-white w-96  p-10 rounded-md">
       <h6 className="uppercase font-bold">Summary</h6>

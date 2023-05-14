@@ -2,7 +2,7 @@ import React from 'react';
 
 const CardProduct = ({ prodcut }) => {
   const { displayName, quantity, price, image } = prodcut;
-  console.log(quantity);
+  console.log(prodcut);
   return (
     <div className="flex gap-5 justify-between ">
       <div className="flex gap-5">

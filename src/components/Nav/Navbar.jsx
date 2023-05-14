@@ -18,7 +18,10 @@ const Navbar = () => {
 
   const scrollRef = useState(null)
   const executeScroll = () => scrollRef.current.scrollIntoView()
-
+  const handleScroolMobile = () => {
+    setStateMenu(!stateMenu)
+    executeScroll()
+  }
   const navTrasnparent = `navbar ${scroll ? '-bg-transparent' : '-bg-transparent'}`
   return (
     <div ref={scrollRef}>
@@ -117,10 +120,18 @@ const Navbar = () => {
         lg:opacity-100
         "
           >
-            <NavLink label="HOME" />
-            <NavLink label="HEADPHONES" />
-            <NavLink label="SPEAKERS" />
-            <NavLink label="EARPHONES" />
+            <Link to="/" onClick={handleScroolMobile}>
+              <NavLink label="HOME" />
+            </Link>
+            <Link to="/products/headphones" onClick={handleScroolMobile}>
+              <NavLink label="HEADPHONES" />
+            </Link>
+            <Link to="/products/speakers" onClick={handleScroolMobile}>
+              <NavLink label="SPEAKERS" />
+            </Link>
+            <Link to="/products/earphones" onClick={handleScroolMobile}>
+              <NavLink label="EARPHONES" />
+            </Link>
           </ul>
         )}
         <Link to="/checkout">
